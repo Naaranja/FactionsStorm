@@ -1,0 +1,122 @@
+
+Routes1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Route4
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route3HGD
+  rotate: false
+  xy: 260, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route3GHB
+  rotate: false
+  xy: 518, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route3DHB
+  rotate: false
+  xy: 2, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route3BGD
+  rotate: false
+  xy: 2, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route2HG
+  rotate: false
+  xy: 260, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route2HD
+  rotate: false
+  xy: 518, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route2HB
+  rotate: false
+  xy: 260, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route2GD
+  rotate: false
+  xy: 518, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+
+Routes2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Route2BG
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route2BD
+  rotate: false
+  xy: 260, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route1H
+  rotate: false
+  xy: 518, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route1G
+  rotate: false
+  xy: 2, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route1D
+  rotate: false
+  xy: 2, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route1B
+  rotate: false
+  xy: 260, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+Route0
+  rotate: false
+  xy: 518, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1

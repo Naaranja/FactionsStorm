@@ -1,0 +1,388 @@
+
+Icons1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+troupe
+  rotate: false
+  xy: 2, 2
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+epee
+  rotate: false
+  xy: 2, 504
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+cible
+  rotate: false
+  xy: 504, 2
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+bouclier
+  rotate: false
+  xy: 504, 504
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+delete
+  rotate: false
+  xy: 1006, 2
+  size: 414, 412
+  orig: 414, 412
+  offset: 0, 0
+  index: -1
+sousmarin2
+  rotate: false
+  xy: 1006, 416
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+sousmarin
+  rotate: false
+  xy: 1006, 674
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+porteavion2
+  rotate: false
+  xy: 1422, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+porteavion
+  rotate: false
+  xy: 1680, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+infanterie2
+  rotate: false
+  xy: 1422, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+infanterie
+  rotate: false
+  xy: 1680, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+helico2
+  rotate: false
+  xy: 1422, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+helico
+  rotate: false
+  xy: 1680, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+build
+  rotate: false
+  xy: 1422, 776
+  size: 204, 204
+  orig: 204, 204
+  offset: 0, 0
+  index: -1
+boutonShop
+  rotate: false
+  xy: 1680, 776
+  size: 204, 204
+  orig: 204, 204
+  offset: 0, 0
+  index: -1
+rubis
+  rotate: false
+  xy: 1264, 416
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+plasma
+  rotate: false
+  xy: 1264, 674
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+lingot4
+  rotate: false
+  xy: 1264, 804
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+lingot3
+  rotate: false
+  xy: 1886, 776
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+z
+  rotate: false
+  xy: 1264, 546
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+Tile
+  rotate: false
+  xy: 1006, 932
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+trophe
+  rotate: false
+  xy: 1072, 932
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+podium
+  rotate: false
+  xy: 1134, 932
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+parametre
+  rotate: false
+  xy: 1196, 932
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+message
+  rotate: false
+  xy: 1264, 934
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+fleches
+  rotate: false
+  xy: 1326, 934
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+
+Icons2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+cuirasse2
+  rotate: false
+  xy: 2, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+cuirasse
+  rotate: false
+  xy: 2, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+chasseur2
+  rotate: false
+  xy: 2, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+chasseur
+  rotate: false
+  xy: 260, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+char2
+  rotate: false
+  xy: 260, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+char
+  rotate: false
+  xy: 260, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+canons2
+  rotate: false
+  xy: 518, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+canons
+  rotate: false
+  xy: 518, 260
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+bombardier2
+  rotate: false
+  xy: 518, 518
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+bombardier
+  rotate: false
+  xy: 776, 2
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+boutonAttaquer
+  rotate: false
+  xy: 2, 776
+  size: 204, 204
+  orig: 204, 204
+  offset: 0, 0
+  index: -1
+iProd8
+  rotate: false
+  xy: 260, 776
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+iProd7
+  rotate: false
+  xy: 518, 776
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+iProd6
+  rotate: false
+  xy: 776, 260
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+iProd5
+  rotate: false
+  xy: 776, 462
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+iProd4
+  rotate: false
+  xy: 776, 664
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+iProd3
+  rotate: false
+  xy: 1034, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+iProd2
+  rotate: false
+  xy: 1236, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+iProd1
+  rotate: false
+  xy: 1438, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+lingot2
+  rotate: false
+  xy: 776, 866
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+lingot1
+  rotate: false
+  xy: 1640, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+lingot0
+  rotate: false
+  xy: 1770, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+iconTrophe
+  rotate: false
+  xy: 1900, 2
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+factionCoin
+  rotate: false
+  xy: 1034, 204
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+etoile
+  rotate: false
+  xy: 1034, 334
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+eclair
+  rotate: false
+  xy: 1034, 464
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+buche
+  rotate: false
+  xy: 1034, 594
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+baril
+  rotate: false
+  xy: 1034, 724
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,232 @@
+
+MenusTheme11.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+fenetreFull
+  rotate: false
+  xy: 2, 2
+  size: 1500, 1317
+  orig: 1500, 1317
+  offset: 0, 0
+  index: -1
+fenetreValidation
+  rotate: false
+  xy: 2, 1321
+  size: 1598, 703
+  orig: 1598, 703
+  offset: 0, 0
+  index: -1
+boutonML
+  rotate: false
+  xy: 1504, 2
+  size: 493, 724
+  orig: 493, 724
+  offset: 0, 0
+  index: -1
+boutonProduction
+  rotate: false
+  xy: 1504, 728
+  size: 540, 351
+  orig: 540, 351
+  offset: 0, 0
+  index: -1
+boutonRessources
+  rotate: false
+  xy: 1504, 1081
+  size: 490, 154
+  orig: 490, 154
+  offset: 0, 0
+  index: -1
+bouton
+  rotate: false
+  xy: 1602, 1321
+  size: 204, 203
+  orig: 204, 203
+  offset: 0, 0
+  index: -1
+boutonValider
+  rotate: false
+  xy: 1808, 1321
+  size: 165, 165
+  orig: 165, 165
+  offset: 0, 0
+  index: -1
+boutonSend
+  rotate: false
+  xy: 1602, 1526
+  size: 165, 165
+  orig: 165, 165
+  offset: 0, 0
+  index: -1
+boutonInfo
+  rotate: false
+  xy: 1769, 1526
+  size: 165, 165
+  orig: 165, 165
+  offset: 0, 0
+  index: -1
+boutonVert
+  rotate: false
+  xy: 1602, 1693
+  size: 256, 106
+  orig: 256, 106
+  offset: 0, 0
+  index: -1
+boutonRouge
+  rotate: false
+  xy: 1602, 1801
+  size: 256, 106
+  orig: 256, 106
+  offset: 0, 0
+  index: -1
+boutonQuitterSeul
+  rotate: false
+  xy: 1602, 1909
+  size: 132, 132
+  orig: 132, 132
+  offset: 0, 0
+  index: -1
+flecheG
+  rotate: false
+  xy: 1975, 1321
+  size: 71, 195
+  orig: 71, 195
+  offset: 0, 0
+  index: -1
+flecheD
+  rotate: false
+  xy: 1860, 1801
+  size: 71, 195
+  orig: 71, 195
+  offset: 0, 0
+  index: -1
+barre séparation
+  rotate: false
+  xy: 2, 2026
+  size: 1373, 9
+  orig: 1373, 9
+  offset: 0, 0
+  index: -1
+smallBouton
+  rotate: false
+  xy: 1936, 1526
+  size: 109, 109
+  orig: 109, 109
+  offset: 0, 0
+  index: -1
+boutonRetour
+  rotate: false
+  xy: 1860, 1693
+  size: 101, 101
+  orig: 101, 101
+  offset: 0, 0
+  index: -1
+boutonQuitter
+  rotate: false
+  xy: 1736, 1909
+  size: 101, 101
+  orig: 101, 101
+  offset: 0, 0
+  index: -1
+boutonValiderSeul
+  rotate: false
+  xy: 1933, 1801
+  size: 84, 88
+  orig: 84, 88
+  offset: 0, 0
+  index: -1
+carreJaune
+  rotate: false
+  xy: 1999, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+carreBleu
+  rotate: false
+  xy: 2017, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+
+MenusTheme12.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+fond
+  rotate: false
+  xy: 2, 2
+  size: 1750, 1024
+  orig: 1750, 1024
+  offset: 0, 0
+  index: -1
+fenetre1
+  rotate: false
+  xy: 2, 1028
+  size: 512, 629
+  orig: 512, 629
+  offset: 0, 0
+  index: -1
+fenetre0
+  rotate: false
+  xy: 516, 1028
+  size: 512, 629
+  orig: 512, 629
+  offset: 0, 0
+  index: -1
+graphMarche
+  rotate: false
+  xy: 2, 1659
+  size: 500, 358
+  orig: 500, 358
+  offset: 0, 0
+  index: -1
+barreExp
+  rotate: false
+  xy: 516, 1659
+  size: 490, 154
+  orig: 490, 154
+  offset: 0, 0
+  index: -1
+barreC
+  rotate: false
+  xy: 1030, 1028
+  size: 520, 136
+  orig: 520, 136
+  offset: 0, 0
+  index: -1
+
+MenusTheme13.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+barreHaut
+  rotate: false
+  xy: 2, 2
+  size: 1750, 142
+  orig: 1750, 142
+  offset: 0, 0
+  index: -1
+barreBasFull
+  rotate: false
+  xy: 2, 146
+  size: 1750, 142
+  orig: 1750, 142
+  offset: 0, 0
+  index: -1
+barreBas
+  rotate: false
+  xy: 2, 290
+  size: 1750, 142
+  orig: 1750, 142
+  offset: 0, 0
+  index: -1
+barreChargement
+  rotate: false
+  xy: 2, 434
+  size: 1040, 100
+  orig: 1040, 100
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,599 @@
+
+Textures1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Garnisonlv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 1024
+  orig: 512, 1024
+  offset: 0, 0
+  index: -1
+Villalv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Villalv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Villalv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Scierielv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Scierielv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Scierielv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ReserveEnergie
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+QGRessourceslv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+QGRessourceslv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+QGRessourceslv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+PortPlasmarefletseul
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+PortPlasma
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Portlv3refletseul
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Portlv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Portlv2refletseul
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Portlv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Portlv1refletseul
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Portlv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Plasma
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Pilotislv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Pilotislv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Pilotislv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures7.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineUralv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineUralv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineUralv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineOrlv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures8.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineOrlv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineOrlv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineFerlv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineFerlv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures9.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineFerlv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineCulv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineCulv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineCulv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures10.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineAlulv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineAlulv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+MineAlulv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Marche
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures11.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Laboratoirelv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Laboratoirelv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Laboratoirelv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Huttelv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures12.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Huttelv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Huttelv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+HDVlv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+HDVlv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures13.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+GQMilitairelv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+GQMilitairelv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+GQMilitairelv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Garnisonlv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures14.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Garnisonlv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Ferme
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Dericklv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Dericklv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures15.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Dericklv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Chantier3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Chantier2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Chaletlv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures16.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Chaletlv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Chaletlv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+CasernePlasma
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Casernelv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures17.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Casernelv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Casernelv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Briqueslv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Briqueslv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures18.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Briqueslv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+BaseAeriennePlasma
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+BaseAeriennelv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+BaseAeriennelv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+
+Textures19.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BaseAeriennelv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1

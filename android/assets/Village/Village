@@ -1,0 +1,94 @@
+
+Village1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+mapIle3
+  rotate: false
+  xy: 0, 0
+  size: 4096, 2048
+  orig: 4096, 2048
+  offset: 0, 0
+  index: -1
+
+Village2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+extensioncoteG
+  rotate: false
+  xy: 0, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+extensioncoteD
+  rotate: false
+  xy: 1024, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+extensionC
+  rotate: false
+  xy: 2048, 0
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+D1
+  rotate: false
+  xy: 3072, 0
+  size: 249, 128
+  orig: 249, 128
+  offset: 0, 0
+  index: -1
+G3
+  rotate: false
+  xy: 3321, 0
+  size: 217, 128
+  orig: 217, 128
+  offset: 0, 0
+  index: -1
+G7
+  rotate: false
+  xy: 3538, 0
+  size: 214, 128
+  orig: 214, 128
+  offset: 0, 0
+  index: -1
+G2
+  rotate: false
+  xy: 3752, 0
+  size: 206, 128
+  orig: 206, 128
+  offset: 0, 0
+  index: -1
+G6
+  rotate: false
+  xy: 3072, 128
+  size: 199, 128
+  orig: 199, 128
+  offset: 0, 0
+  index: -1
+D3
+  rotate: false
+  xy: 3072, 256
+  size: 195, 128
+  orig: 195, 128
+  offset: 0, 0
+  index: -1
+D8
+  rotate: false
+  xy: 3072, 384
+  size: 172, 128
+  orig: 172, 128
+  offset: 0, 0
+  index: -1
+D6
+  rotate: false
+  xy: 3072, 512
+  size: 168, 128
+  orig: 168, 128
+  offset: 0, 0
+  index: -1

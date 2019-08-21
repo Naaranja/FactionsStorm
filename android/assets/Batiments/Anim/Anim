@@ -1,0 +1,1346 @@
+
+Anim1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 12
+ScierieLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 11
+ScierieLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 10
+ScierieLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 9
+
+Anim2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 8
+ScierieLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 7
+ScierieLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 6
+ScierieLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+
+Anim3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+ScierieLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+ScierieLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+ScierieLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+
+Anim4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 9
+ScierieLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 8
+ScierieLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 7
+ScierieLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 6
+
+Anim5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+ScierieLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+ScierieLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+ScierieLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+ScierieLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 9
+ScierieLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 8
+ScierieLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 7
+
+Anim7.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 6
+ScierieLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+ScierieLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+ScierieLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+
+Anim8.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ScierieLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+ScierieLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 11
+ScierieLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 10
+ScierieLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+
+Anim9.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ReserveEnergie
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+ReserveEnergie
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+ReserveEnergie
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+ReserveEnergie
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim10.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ReserveEnergie
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+Plasma
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+Plasma
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+Plasma
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim11.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Plasma
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineUraLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineUraLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineUraLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+
+Anim12.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineUraLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineUraLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineUraLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineUraLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim13.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineUraLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineUraLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineUraLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineUraLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+
+Anim14.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineUraLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineUraLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineUraLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineUraLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+
+Anim15.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineOrLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineOrLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineOrLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineOrLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim16.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineOrLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineOrLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineOrLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineOrLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+
+Anim17.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineOrLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineOrLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineOrLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineOrLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim18.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineOrLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineOrLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineOrLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineFerLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+
+Anim19.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineFerLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineFerLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineFerLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineFerLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+
+Anim20.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineFerLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineFerLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineFerLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineFerLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim21.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineFerLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineFerLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineFerLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineFerLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+
+Anim22.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineFerLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineFerLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineCuLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineCuLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim23.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineCuLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineCuLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineCuLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineCuLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+
+Anim24.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineCuLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineCuLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineCuLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineCuLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+
+Anim25.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineCuLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineCuLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineCuLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineCuLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim26.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineCuLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineAluLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineAluLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineAluLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+
+Anim27.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineAluLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineAluLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineAluLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+MineAluLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim28.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineAluLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineAluLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineAluLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+MineAluLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+
+Anim29.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+MineAluLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+MineAluLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+MineAluLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+MineAluLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+
+Anim30.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Ferme3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Ferme2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+Ferme1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+DerickLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 8
+
+Anim31.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+DerickLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 7
+DerickLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 6
+DerickLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+DerickLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim32.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+DerickLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+DerickLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+DerickLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+DerickLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 8
+
+Anim33.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+DerickLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 7
+DerickLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 6
+DerickLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+DerickLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim34.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+DerickLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+DerickLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+DerickLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+DerickLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 8
+
+Anim35.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+DerickLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 7
+DerickLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 6
+DerickLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 5
+DerickLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim36.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+DerickLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+DerickLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+DerickLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+CasernePlasma
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+
+Anim37.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CasernePlasma
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+CasernePlasma
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+CasernePlasma
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+CaserneLv3
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim38.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CaserneLv3
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+CaserneLv2
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+CaserneLv2
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+CaserneLv1
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim39.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CaserneLv1
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+BaseAeriennePlasma
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 4
+BaseAeriennePlasma
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 3
+BaseAeriennePlasma
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim40.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BaseAeriennePlasma
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+BaseAerienneLv3
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+BaseAerienneLv3
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+BaseAerienneLv2
+  rotate: false
+  xy: 512, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+
+Anim41.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+BaseAerienneLv2
+  rotate: false
+  xy: 0, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
+BaseAerienneLv1
+  rotate: false
+  xy: 512, 0
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 2
+BaseAerienneLv1
+  rotate: false
+  xy: 0, 512
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: 1
