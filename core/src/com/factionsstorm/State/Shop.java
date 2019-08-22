@@ -13,6 +13,7 @@ import com.factionsstorm.Tool.Button.Button;
 import com.factionsstorm.Tool.Dragger;
 import com.factionsstorm.Tool.Drawer;
 import com.factionsstorm.Tool.Item;
+import com.factionsstorm.Tool.Selector;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ public class Shop implements State {
     Dragger dragger;
 
     VillageManager vm;
+    Selector selector;
     ArrayList<Item> items = new ArrayList<Item>();
     Button exitButton;
 
@@ -47,6 +49,20 @@ public class Shop implements State {
 
         dragger = new Dragger();
 
+        selector = new Selector(Sc.screenW*.3f);
+        selector.add(new Selector.Tab(Assets.instance.icon.ressources[0]){
+            @Override
+            public void action(){ initDwelings(); }
+        });
+        selector.add(new Selector.Tab(Assets.instance.icon.ressources[1]){
+            @Override
+            public void action(){ initProducers(); }
+        });
+        selector.add(new Selector.Tab(Assets.instance.icon.ressources[2]));
+        selector.add(new Selector.Tab(Assets.instance.icon.ressources[3]));
+        selector.add(new Selector.Tab(Assets.instance.icon.ressources[4]));
+
+
         exitButton = new Button(new Vector2(Sc.screenW-Sc.screenH*.1f, Sc.screenH*.9f), new Vector2(Sc.screenH*.08f,Sc.screenH*.08f), Assets.instance.menu.buttonQuitterSeul){
             @Override
             public void action(){
@@ -70,6 +86,7 @@ public class Shop implements State {
         fixedCamera.update();
         camera.update();
 
+        selector.update();
         exitButton.update();
         for(Item item : items){
             item.update();
@@ -87,6 +104,7 @@ public class Shop implements State {
         Drawer.setFontScale(1f);
         Drawer.text("Buildings", Sc.screenW*.01f, Sc.screenH*.99f);
 
+        selector.render();
         exitButton.render();
 
         Drawer.batch.setProjectionMatrix(camera.combined);
@@ -106,20 +124,23 @@ public class Shop implements State {
     public boolean touchDown(int x, int y, int pointer) {
         dragger.add(new Vector2(x,y),pointer);
 
+        boolean touched=false;
         Vector3 input=fixedCamera.unproject(new Vector3(x,y,0));
-        exitButton.touchDown(input);
+        if(selector.touchDown(input))touched=true;
+        if(exitButton.touchDown(input))touched=true;
 
         input=camera.unproject(new Vector3(x,y,0));
         for(Item item : items){
-            if(item.touchDown(input)){
-                dragable=false;
-            }
+            if(item.touchDown(input))touched=true;
+
         }
-        return false;
+        dragable=!touched;
+        return touched;
     }
 
     public boolean touchUp(int x, int y, int pointer) {
         Vector3 input=fixedCamera.unproject(new Vector3(x,y,0));
+        selector.touchUp(input);
         exitButton.touchUp(input);
 
         input=camera.unproject(new Vector3(x,y,0));
@@ -145,6 +166,14 @@ public class Shop implements State {
         items.add(new Item(vm, new HutLv1(new Vector2(),0), Sc.screenW*0.64f));
         items.add(new Item(vm, new HutLv1(new Vector2(),0), Sc.screenW*0.85f));
         items.add(new Item(vm, new HutLv1(new Vector2(),0), Sc.screenW*1.06f));
+        setVM();
+    }
+
+    private void initProducers(){
+        items.clear();
+        items.add(new Item(vm, new HutLv1(new Vector2(),0), Sc.screenW*.01f));
+        items.add(new Item(vm, new HutLv1(new Vector2(),0), Sc.screenW*0.22f));
+        items.add(new Item(vm, new HutLv1(new Vector2(),0), Sc.screenW*0.43f));
         setVM();
     }
 
