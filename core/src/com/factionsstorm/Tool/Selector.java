@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Selector {
 
-    final static float TAB_WIDTH= Sc.screenW*.08f, TAB_HEIGTH=Sc.screenH*.08f, SELECTED_TAB_HEIGTH=Sc.screenH*.12f;
+    final static float TAB_WIDTH= Sc.screenW*.08f, TAB_HEIGTH=Sc.screenH*.13f, SELECTED_TAB_HEIGTH=Sc.screenH*.17f;
 
     ArrayList<Tab> tabs = new ArrayList<Tab>();
     float positionX;
@@ -87,7 +87,7 @@ public class Selector {
 
         private void render(){
             Drawer.texture(Assets.instance.menu.square, position.x, position.y, TAB_WIDTH, SELECTED_TAB_HEIGTH, 0, selected ? new Vector3(.2f, .8f, .9f) : new Vector3(.15f, .6f, 8f), 1);
-            Drawer.texture(textureRegion, position.x+TAB_WIDTH*.1f, position.y, TAB_WIDTH*.8f, TAB_WIDTH*.8f, 0);
+            Drawer.texture(textureRegion, position.x+TAB_WIDTH*.1f, position.y +((Sc.screenH-position.y)-TAB_WIDTH*.8f)*.5f, TAB_WIDTH*.8f, TAB_WIDTH*.8f, 0);
         }
 
         private boolean touch(Vector3 input){

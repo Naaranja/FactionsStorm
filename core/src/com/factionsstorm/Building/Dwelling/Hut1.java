@@ -4,9 +4,9 @@ import com.badlogic.gdx.math.Vector2;
 import com.factionsstorm.Assets;
 import com.factionsstorm.Player;
 
-public class HutLv1 extends Dwelling{
+public class Hut1 extends Dwelling{
 
-    public HutLv1(Vector2 position, double productionEndTime){
+    public Hut1(Vector2 position, double productionEndTime){
         super(position, productionEndTime);
         name="Hut Lv 1";
         level=0;

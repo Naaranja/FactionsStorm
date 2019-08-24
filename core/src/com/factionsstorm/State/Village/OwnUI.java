@@ -6,7 +6,7 @@ import com.badlogic.gdx.math.Vector3;
 import com.factionsstorm.Assets;
 import com.factionsstorm.Building.Building;
 import com.factionsstorm.Sc;
-import com.factionsstorm.State.Shop;
+import com.factionsstorm.State.Menu.Shop;
 import com.factionsstorm.State.StateManager;
 import com.factionsstorm.Tool.Button.Button;
 

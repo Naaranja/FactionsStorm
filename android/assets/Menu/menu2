@@ -1,0 +1,40 @@
+menu2.png
+size: 273, 1251
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Flèche
+  rotate: true
+  xy: 1, 1095
+  size: 155, 203
+  orig: 155, 203
+  offset: 0, 0
+  index: -1
+triangleBlanc1
+  rotate: false
+  xy: 1, 549
+  size: 271, 271
+  orig: 271, 271
+  offset: 0, 0
+  index: -1
+triangleBlanc2
+  rotate: false
+  xy: 1, 822
+  size: 271, 271
+  orig: 271, 271
+  offset: 0, 0
+  index: -1
+triangleBlanc3
+  rotate: false
+  xy: 1, 1
+  size: 271, 272
+  orig: 271, 272
+  offset: 0, 0
+  index: -1
+triangleBlanc4
+  rotate: false
+  xy: 1, 275
+  size: 271, 272
+  orig: 271, 272
+  offset: 0, 0
+  index: -1

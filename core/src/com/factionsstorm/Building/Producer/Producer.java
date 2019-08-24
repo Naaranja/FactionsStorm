@@ -1,18 +1,25 @@
 package com.factionsstorm.Building.Producer;
 
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
-import com.factionsstorm.Assets;
 import com.factionsstorm.Building.Building;
+import com.factionsstorm.Player;
 import com.factionsstorm.Sc;
+import com.factionsstorm.State.Menu.ProducerProduction;
+import com.factionsstorm.State.StateManager;
 import com.factionsstorm.Tool.Button.Button;
 import com.factionsstorm.Tool.Button.TimerButton;
+import com.factionsstorm.Tool.Trajectory;
 
 public abstract class Producer extends Building {
 
     private enum State{waiting, producing, finished};
+    protected TextureRegion ressourceTexture;
 
-    State state;
-    double productionEndTime;
+    protected State state;
+    protected double productionEndTime;
+    protected Player.Commodities commoditie;
+    protected int[] productionCost = new int[8], productionIncome = new int[8];
 
     public Producer(Vector2 position, double productionEndTime){
         super(position);
@@ -34,33 +41,33 @@ public abstract class Producer extends Building {
         }
     }
 
-    public void produce(int production){
-        state=State.producing;
+    public void produce(int index){
+
     }
 
     public void harvest(){
         state=State.waiting;
     }
 
+    public void openProcuderProduction(){
+        StateManager.instance.open(new ProducerProduction(this, commoditie, productionCost, productionIncome));
+    }
+
     @Override
     public void createUI() {
+        ui = new UI();
         Button[] buttons = new Button[1];
-        buttons[0] = new TimerButton(new Vector2(), new Vector2(), Assets.instance.icon.ressources[0], productionEndTime){
+        buttons[0] = new TimerButton(new Vector2(Sc.screenW*.5f-ui.BUTTON_WIDTH/2,-ui.BUTTON_HEIGHT), new Vector2(ui.BUTTON_WIDTH,ui.BUTTON_HEIGHT), ressourceTexture, productionEndTime){
             @Override
             public void action(){
-                switch (state){
-                    case waiting:
-
-                        break;
-                    case finished:
-                        harvest();
-                        break;
+                if(productionEndTime<Sc.time){
+                    openProcuderProduction();
                 }
+                ((TimerButton)ui.buttons[0]).setEndTime(productionEndTime);
             }
         };
-
-        ui = new UI(){
-
-        };
+        Trajectory trajectory = new Trajectory(buttons[0].getPosition(),new Vector2(Sc.screenW*.5f-ui.BUTTON_WIDTH/2,ui.BUTTON_POS_Y),.25f);
+        buttons[0].setTrajectory(trajectory);
+        ui.setButtons(buttons);
     }
 }

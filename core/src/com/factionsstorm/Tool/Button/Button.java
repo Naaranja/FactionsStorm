@@ -12,7 +12,7 @@ public class Button {
     Vector2 position, dim, renderPosition, renderDim;
     Trajectory trajectory = null;
     TextureRegion textureRegion=null;
-    private Vector3 color = new Vector3(1,1,1);
+    private Vector3 color = new Vector3(.1f,.4f,.6f);
     private float alpha=1;
     private boolean touched=false;
     protected boolean locked=false;
@@ -24,6 +24,15 @@ public class Button {
         this.position=position;
         this.dim=dim;
         this.textureRegion=textureRegion;
+        renderPosition=new Vector2(position);
+        renderDim=new Vector2(dim);
+    }
+
+    public Button(Vector2 position, Vector2 dim, TextureRegion textureRegion, Vector3 color){
+        this.position=position;
+        this.dim=dim;
+        this.textureRegion=textureRegion;
+        this.color=color;
         renderPosition=new Vector2(position);
         renderDim=new Vector2(dim);
     }
@@ -46,11 +55,11 @@ public class Button {
 
     public void render(){
         if(locked){
-            Drawer.texture(Assets.instance.menu.button, renderPosition.x, renderPosition.y, renderDim.x, renderDim.y, 0, new Vector3(color.x*.3f,color.y*.3f,color.z*.3f),alpha);
-            Drawer.texture(textureRegion, renderPosition.x+renderDim.x*.1f, renderPosition.y+renderDim.y*.1f, renderDim.x*.8f, renderDim.y*.8f, 0, new Vector3(color.x*.3f,color.y*.3f,color.z*.3f),alpha);
+            Drawer.texture(Assets.instance.menu.square, renderPosition.x, renderPosition.y, renderDim.x, renderDim.y, 0, new Vector3(color.x*.3f,color.y*.3f,color.z*.3f) ,alpha);
+            Drawer.texture(textureRegion, renderPosition.x+renderDim.x*.1f, renderPosition.y+renderDim.y*.1f, renderDim.x*.8f, renderDim.y*.8f, 0, new Vector3(.3f, .3f, .3f),alpha);
         }else {
-            Drawer.texture(Assets.instance.menu.button, renderPosition.x, renderPosition.y, renderDim.x, renderDim.y, 0, color, alpha);
-            Drawer.texture(textureRegion, renderPosition.x+renderDim.x*.1f, renderPosition.y+renderDim.y*.1f, renderDim.x*.8f, renderDim.y*.8f, 0, color, alpha);
+            Drawer.texture(Assets.instance.menu.square, renderPosition.x, renderPosition.y, renderDim.x, renderDim.y, 0, color, alpha);
+            Drawer.texture(textureRegion, renderPosition.x+renderDim.x*.1f, renderPosition.y+renderDim.y*.1f, renderDim.x*.8f, renderDim.y*.8f, 0, alpha);
         }
     }
 

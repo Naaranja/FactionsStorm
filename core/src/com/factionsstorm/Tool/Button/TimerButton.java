@@ -18,7 +18,7 @@ public class TimerButton extends Button {
     @Override
     public void update(){
         super.update();
-        timer=(int)(endTime-Sc.time);
+        timer=(int)Math.floor(endTime-Sc.time);
         locked=(timer>=0);
     }
 

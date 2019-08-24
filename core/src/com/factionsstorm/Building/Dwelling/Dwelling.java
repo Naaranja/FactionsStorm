@@ -28,7 +28,6 @@ public abstract class Dwelling extends Building {
         }
     }
 
-
     public void harvest(){
         Player.instance.add(Player.Commodities.fcoin,productionValue);
         productionEndTime=Sc.time+productionTime;

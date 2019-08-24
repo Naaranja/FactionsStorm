@@ -39,6 +39,7 @@ public class Assets implements Disposable, AssetErrorListener {
         assetManager.load("Menus/MenusTheme1/MenusTheme1" ,TextureAtlas.class);
 
         assetManager.load("Menu/square", TextureAtlas.class);
+        assetManager.load("Menu/menu2", TextureAtlas.class);
 
         assetManager.load("Icons/Icons" ,TextureAtlas.class);
 
@@ -235,7 +236,7 @@ public class Assets implements Disposable, AssetErrorListener {
     }
 
     public class Menu{
-        public final TextureRegion square, carreExp, carreEnergie, button, smallButton, buttonML, barreC, barreHaut, barreBas, barreBasFull, buttonRetour, buttonValider, buttonBack, buttonInfo, buttonSend, buttonRessources, buttonProduction, barreExp, barreChargement, fond,
+        public final TextureRegion square, topRightTriangle, topLeftTriangle, bottomLeftTriangle, bottomRightTriangle, fleche, carreExp, carreEnergie, button, smallButton, buttonML, barreC, barreHaut, barreBas, barreBasFull, buttonRetour, buttonValider, buttonBack, buttonInfo, buttonSend, buttonRessources, buttonProduction, barreExp, barreChargement, fond,
                 buttonVert, buttonRouge, fenetreFull, fenetreValidation, fenetreSlide0, fenetreSlide1, flecheD, flecheG, buttonQuitterSeul, buttonValiderSeul,graphMarche;
         public Menu(){
             TextureAtlas atlas = assetManager.get("Menus/MenusTheme1/MenusTheme1");
@@ -278,6 +279,16 @@ public class Assets implements Disposable, AssetErrorListener {
             for(Texture t : atlas.getTextures()){t.setFilter(TextureFilter.Linear, TextureFilter.Linear);}
 
             square = atlas.findRegion("square");
+
+            atlas = assetManager.get("Menu/menu2");
+
+            //for(Texture t : atlas.getTextures()){t.setFilter(TextureFilter.Linear, TextureFilter.Linear);}
+
+            fleche = atlas.findRegion("Flèche");
+            topRightTriangle = atlas.findRegion("triangleBlanc1");
+            topLeftTriangle = atlas.findRegion("triangleBlanc2");
+            bottomLeftTriangle = atlas.findRegion("triangleBlanc3");
+            bottomRightTriangle = atlas.findRegion("triangleBlanc4");
         }
     }
 

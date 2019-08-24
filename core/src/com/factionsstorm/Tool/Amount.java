@@ -1,14 +1,20 @@
 package com.factionsstorm.Tool;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.Vector3;
 import com.factionsstorm.Assets;
 import com.factionsstorm.Player;
+import com.factionsstorm.Sc;
 
+import java.beans.VetoableChangeListener;
 import java.util.ArrayList;
 
 public class Amount {
 
-    ArrayList<Single> list = new ArrayList<Single>();
+    private final float COMMODITIE_SIZE=Sc.screenH*.05f;
+
+    private ArrayList<Single> list = new ArrayList<Single>();
 
     public void add(Player.Commodities commoditie, int value){
         list.add(new Single(commoditie,value));
@@ -33,6 +39,19 @@ public class Amount {
             }
         }
         return true;
+    }
+
+    public void render(Vector2 position, float heigth){
+        int size=list.size();
+        Drawer.setFontScale(.4f);
+        for(int z=0;z<size;z++){
+            Drawer.texture(list.get(z).getTexture(),position.x+ Sc.screenW*.04f,position.y+heigth*(1-(z+.5f)/size)-COMMODITIE_SIZE*.5f, COMMODITIE_SIZE, COMMODITIE_SIZE,0, new Vector3(.8f,.8f,.8f),1);
+            if(list.get(z).isPayable()){
+                Drawer.text(String.valueOf(list.get(z).getValue()), position.x + Sc.screenW * .1f, position.y+heigth*(1-(z+.5f)/size)-COMMODITIE_SIZE*.5f + Sc.screenH * .045f);
+            }else {
+                Drawer.text(String.valueOf(list.get(z).getValue()), position.x + Sc.screenW * .1f, position.y+heigth*(1-(z+.5f)/size)-COMMODITIE_SIZE*.5f + Sc.screenH * .045f, new Vector3(1, 0, 0), 1);
+            }
+        }
     }
 
     public class Single{
