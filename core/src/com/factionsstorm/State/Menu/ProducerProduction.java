@@ -110,7 +110,7 @@ public class ProducerProduction extends Menu implements State {
         private final float width=Sc.screenW*.2f;
         private boolean touched=false, selected=false;
         private Button buyButton;
-        private String name;
+        private String name, time;
 
         //TODO buyButton -> TextButton
 
@@ -124,6 +124,9 @@ public class ProducerProduction extends Menu implements State {
                     "Big harvest", "Big production", "Wtf harvest", "Wtf production"};
             name=names[index];
 
+            String[] times = {"5m", "30m", "1h", "2h", "4h", "12h", "24h", "48h"};
+            time=times[index];
+
             buyButton = new Button(new Vector2(positionX+width*.1f,Sc.screenH*.04f), new Vector2(width*.8f, Sc.screenH*.2f), Assets.instance.menu.buttonValider){
                 @Override
                 public void action(){
@@ -134,10 +137,11 @@ public class ProducerProduction extends Menu implements State {
                     }
                 }
             };
+            if(!productionCost.isPayable()) buyButton.setLocked(true);
         }
 
         public void update(){
-
+            buyButton.update();
         }
 
         public void render(){
@@ -149,16 +153,20 @@ public class ProducerProduction extends Menu implements State {
                 renderName(Sc.screenH * .72f);
                 renderProduction(Sc.screenH * .28f);
                 Drawer.texture(Assets.instance.menu.square, positionX, 0, width, Sc.screenH * .28f, 0, new Vector3(.7f, .7f, .7f), 1);
+                buyButton.render();
             }
         }
 
         private void renderTexture(boolean locked, float y){
-            Drawer.texture(Assets.instance.menu.bottomRightTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .8f, .2f), 1);
+            Drawer.texture(Assets.instance.menu.topTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .8f, .2f), 1);
             Drawer.texture(Assets.instance.menu.square, positionX, y, width, Sc.screenH * .28f, 0, new Vector3(.7f, .8f, .2f), 1);
             Drawer.texture(textureRegion, positionX + (Sc.screenW * .2f - Sc.screenH * .3f) * .5f, y, Sc.screenH * .3f, Sc.screenH * .3f, 0);
         }
 
         private void renderName(float y){
+            if(selected){
+                Drawer.texture(Assets.instance.menu.topTriangle, positionX, y+Sc.screenH*.08f, width, Sc.screenH*.015f, 0, new Vector3(.3f, .3f, .3f), 1);
+            }
             Drawer.texture(Assets.instance.menu.square,positionX, y, width, Sc.screenH*.08f,0, new Vector3(.3f,.3f,.3f),1);
             Drawer.setFontScale(.48f);
             Drawer.text(name ,positionX,y+Sc.screenH*.07f, width);
@@ -166,10 +174,12 @@ public class ProducerProduction extends Menu implements State {
 
         private void renderProduction(float y){
             Drawer.texture(Assets.instance.menu.square,positionX, y+Sc.screenH*.22f, width, Sc.screenH*.22f,0, new Vector3(.8f,.8f,.8f),1);
-            productionCost.render(new Vector2(positionX, y+Sc.screenH*.22f),Sc.screenH*.22f);
+            productionCost.render(new Vector2(positionX, y+Sc.screenH*.22f),Sc.screenH*.22f, true);
             Drawer.texture(Assets.instance.menu.square,positionX, y, width, Sc.screenH*.22f,0, new Vector3(.7f,.7f,.7f),1);
-            productionIncome.render(new Vector2(positionX, y),Sc.screenH*.22f);
-            Drawer.texture(Assets.instance.menu.fleche, positionX+width*.15f, y+Sc.screenH*.15f, Sc.screenH*.1f, Sc.screenH*.14f, 0);
+            productionIncome.render(new Vector2(positionX, y),Sc.screenH*.22f, false);
+            Drawer.texture(Assets.instance.menu.flecheBleu, positionX+width*.15f, y+Sc.screenH*.15f, Sc.screenH*.1f, Sc.screenH*.14f, 0);
+            Drawer.setFontScale(.6f);
+            Drawer.text(time, positionX+width*.5f, y+Sc.screenH*.25f);
         }
 
         public boolean touchDown(Vector3 input){

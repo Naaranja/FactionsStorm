@@ -42,7 +42,7 @@ public abstract class Producer extends Building {
     }
 
     public void produce(int index){
-
+        state=State.producing;
     }
 
     public void harvest(){

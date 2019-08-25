@@ -35,7 +35,7 @@ public class Shop extends Menu implements State {
     public void create() {
         super.create();
 
-        selector = new Selector(Sc.screenW*.3f);
+        selector = new Selector(Sc.screenW*.03f);
         selector.add(new Selector.Tab(Assets.instance.icon.ressources[0]){
             @Override
             public void action(){ initDwelings(); }
@@ -67,9 +67,6 @@ public class Shop extends Menu implements State {
         Drawer.batch.begin();
 
         super.render();
-
-        Drawer.setFontScale(1f);
-        Drawer.text("Buildings", Sc.screenW*.01f, Sc.screenH*.99f);
 
         selector.render();
 
@@ -203,17 +200,20 @@ public class Shop extends Menu implements State {
 
         private void renderTexture(boolean locked, float y){
             if(locked) {
-                Drawer.texture(Assets.instance.menu.bottomRightTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .7f, .7f), 1);
+                Drawer.texture(Assets.instance.menu.topTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .7f, .7f), 1);
                 Drawer.texture(Assets.instance.menu.square, positionX, y, width, Sc.screenH *.28f, 0, new Vector3(.7f, .7f, .7f), 1);
                 Drawer.texture(building.textureFixe, positionX + (Sc.screenW * .2f - Sc.screenH * .3f) * .5f, y + Sc.screenH * .02f, Sc.screenH * .3f, Sc.screenH * .3f, 0, new Vector3(0,0,0), 1);
             }else{
-                Drawer.texture(Assets.instance.menu.bottomRightTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .8f, .2f), 1);
+                Drawer.texture(Assets.instance.menu.topTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .8f, .2f), 1);
                 Drawer.texture(Assets.instance.menu.square, positionX, y, width, Sc.screenH * .28f, 0, new Vector3(.7f, .8f, .2f), 1);
                 Drawer.texture(building.textureFixe, positionX + (Sc.screenW * .2f - Sc.screenH * .3f) * .5f, y + Sc.screenH * .02f, Sc.screenH * .3f, Sc.screenH * .3f, 0);
             }
         }
 
         private void renderName(String name, float y){
+            if(selected){
+                Drawer.texture(Assets.instance.menu.topTriangle, positionX, y+Sc.screenH*.08f, width, Sc.screenH*.015f, 0, new Vector3(.3f, .3f, .3f), 1);
+            }
             Drawer.texture(Assets.instance.menu.square,positionX,y, width, Sc.screenH*.08f,0, new Vector3(.3f,.3f,.3f),1);
             Drawer.setFontScale(.48f);
             Drawer.text(name ,positionX,y+Sc.screenH*.07f, width);
@@ -225,7 +225,7 @@ public class Shop extends Menu implements State {
 
         private void renderAmount(float y){
             Drawer.texture(Assets.instance.menu.square,positionX,y, width, Sc.screenH*.25f,0, new Vector3(.8f,.8f,.8f),1);
-            amount.render(new Vector2(positionX, y), Sc.screenH*.25f);
+            amount.render(new Vector2(positionX, y), Sc.screenH*.25f, true);
         }
 
         private boolean touchDown(Vector3 input){

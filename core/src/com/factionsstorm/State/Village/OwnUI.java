@@ -1,18 +1,23 @@
 package com.factionsstorm.State.Village;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.factionsstorm.Assets;
 import com.factionsstorm.Building.Building;
+import com.factionsstorm.Player;
 import com.factionsstorm.Sc;
 import com.factionsstorm.State.Menu.Shop;
 import com.factionsstorm.State.StateManager;
 import com.factionsstorm.Tool.Button.Button;
+import com.factionsstorm.Tool.Drawer;
 
 public class OwnUI extends UI {
 
     Button[] buttonsContruction = new Button[2];
+    Ressources ressources;
 
     @Override
     public void create(){
@@ -39,6 +44,8 @@ public class OwnUI extends UI {
                 vm.setConstructionBuilding(null);
             }
         };
+
+        ressources = new Ressources();
     }
 
     @Override
@@ -58,6 +65,7 @@ public class OwnUI extends UI {
                 if (building.ui != null) building.ui.update();
             }
         }
+        ressources.update();
         this.camera.update();
     }
 
@@ -72,6 +80,7 @@ public class OwnUI extends UI {
                 if (building.ui != null) building.ui.render();
             }
         }
+        ressources.render();
     }
 
     @Override
@@ -90,6 +99,7 @@ public class OwnUI extends UI {
                 }
             }
         }
+        if(ressources.touchDown(input)) return true;
         return false;
     }
 
@@ -109,6 +119,100 @@ public class OwnUI extends UI {
                 }
             }
         }
+        if(ressources.touchUp(input)) return true;
         return false;
+    }
+
+    private class Ressources{
+
+        boolean renderAll=false;
+        Res[] baseRes = new Res[5], otherRes = new Res[4];
+        Button button;
+
+        private Ressources(){
+            baseRes[0] = new Res(Player.Commodities.fcoin, new Vector2(Sc.screenW*.01f, Sc.screenH*.91f));
+            baseRes[1] = new Res(Player.Commodities.wood, new Vector2(Sc.screenW*.17f, Sc.screenH*.91f));
+            baseRes[2] = new Res(Player.Commodities.oil, new Vector2(Sc.screenW*.33f, Sc.screenH*.91f));
+            baseRes[3] = new Res(Player.Commodities.iron, new Vector2(Sc.screenW*.01f, Sc.screenH*.82f));
+            baseRes[4] = new Res(Player.Commodities.plasma, new Vector2(Sc.screenW*.01f, Sc.screenH*.73f));
+
+            otherRes[0] = new Res(Player.Commodities.copper, new Vector2(Sc.screenW*.17f, Sc.screenH*.82f));
+            otherRes[1] = new Res(Player.Commodities.aluminium, new Vector2(Sc.screenW*.33f, Sc.screenH*.82f));
+            otherRes[2] = new Res(Player.Commodities.gold, new Vector2(Sc.screenW*.17f, Sc.screenH*.73f));
+            otherRes[3] = new Res(Player.Commodities.uranium, new Vector2(Sc.screenW*.33f, Sc.screenH*.73f));
+
+            button = new Button(new Vector2(Sc.screenW*.16f - Sc.screenH*.04f, Sc.screenH*.82f), new Vector2(Sc.screenH*.08f, Sc.screenH*.08f), Assets.instance.icon.bouclier){
+                @Override
+                public void action(){
+                    renderAll=!renderAll;
+                }
+            };
+        }
+
+        private void update(){
+            for(Res res : baseRes){
+                res.update();
+            }
+            button.update();
+            if(renderAll){
+                for(Res res : otherRes){
+                    res.update();
+                }
+            }
+        }
+
+        private void render(){
+            for(Res res : baseRes){
+                res.render();
+            }
+            button.render();
+            if(renderAll){
+                for(Res res : otherRes){
+                    res.render();
+                }
+            }
+        }
+
+        private boolean touchDown(Vector3 input){
+            if(button.touchDown(input)) return true;
+            return false;
+        }
+
+        private boolean touchUp(Vector3 input){
+            if(button.touchUp(input)) return true;
+            return false;
+        }
+
+        private class Res{
+
+            Vector2 position, dim = new Vector2(Sc.screenW*.15f, Sc.screenH*.08f);
+            Player.Commodities commoditie;
+            TextureRegion textureRegion;
+            Vector3 color = new Vector3(.1f,.4f,.6f);
+            int value;
+
+            private Res(Player.Commodities commoditie, Vector2 position){
+                this.position=position;
+                this.commoditie=commoditie;
+                textureRegion = Assets.instance.icon.getCommoditieTexture(commoditie);
+                value = Player.instance.get(commoditie);
+            }
+
+            private void update(){
+                int target = Player.instance.get(commoditie);
+                if(value != target){
+                    value += (target - value)*.1f;
+                    if(Math.abs(target-value)<10) value = target;
+                }
+            }
+
+            private void render(){
+                Drawer.texture(Assets.instance.menu.square, position.x+dim.y*.5f, position.y+dim.y*.1f, dim.x-dim.y*.5f, dim.y*.8f, 0, color, 1);
+                Drawer.texture(textureRegion, position.x, position.y, dim.y, dim.y, 0);
+                Drawer.setFontScale(.4f);
+                Drawer.text(String.valueOf(value), position.x+dim.y*.5f, position.y+dim.y*.75f, dim.x-dim.y*.5f);
+            }
+        }
+
     }
 }

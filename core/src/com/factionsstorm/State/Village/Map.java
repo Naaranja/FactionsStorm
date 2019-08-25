@@ -1,6 +1,5 @@
 package com.factionsstorm.State.Village;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Matrix4;
@@ -22,6 +21,8 @@ public class Map{
     final Plane xyPlane = new Plane(new Vector3(0, 0, 1), 0);
 
     private VillageManager vm;
+
+    private final float leftLimit=-50.85f, topLimit=83.8f, rightLimit=50.35f, botLimit=-3.65f;
 
     public Map(VillageManager villageManager){
         this.vm=villageManager;
@@ -54,6 +55,32 @@ public class Map{
         d.x*=Sc.W/Sc.screenW;
         d.y*=Sc.H/Sc.screenH;
         camera.position.add(d.y-d.x,d.y+d.x,0);
+
+        camera.update();
+
+        Vector3 topLeftAngle=new Vector3();
+        Ray pickRay = camera.getPickRay(0, 0);
+        Intersector.intersectRayPlane(pickRay, xyPlane, topLeftAngle);
+        if(topLeftAngle.x - topLeftAngle.y < leftLimit){
+            float dif=(leftLimit - (topLeftAngle.x - topLeftAngle.y))*.5f;
+            camera.position.add(dif,-dif,0);
+        }
+        if(topLeftAngle.x + topLeftAngle.y > topLimit){
+            float dif=(topLimit - (topLeftAngle.x + topLeftAngle.y))*.5f;
+            camera.position.add(dif,dif,0);
+        }
+        Vector3 botRightAngle=new Vector3();
+        pickRay = camera.getPickRay(Sc.screenW, Sc.screenH);
+        Intersector.intersectRayPlane(pickRay, xyPlane, botRightAngle);
+        if(botRightAngle.x - botRightAngle.y > rightLimit){
+            float dif=(rightLimit - (botRightAngle.x - botRightAngle.y))*.5f;
+            camera.position.add(dif,-dif,0);
+        }
+        if(botRightAngle.x + botRightAngle.y < botLimit){
+            float dif=(botLimit - (botRightAngle.x + botRightAngle.y))*.5f;
+            camera.position.add(dif,dif,0);
+        }
+
         camera.update();
     }
 
@@ -62,7 +89,7 @@ public class Map{
         Drawer.batch.setTransformMatrix(matrix);
 
         //map
-        Drawer.texture(Assets.instance.village.village, -27.2f, 23.6f,2*25.3f*(float) Math.sqrt(2), 25.3f*(float) Math.sqrt(6), -45);
+        Drawer.texture(Assets.instance.village.village, -27.25f, 23.6f,2*25.3f*(float) Math.sqrt(2), 25.3f*(float) Math.sqrt(6), -45);
 
         //buildings
         for (Building building : vm.buildings) {
@@ -127,5 +154,4 @@ public class Map{
             camera.zoom=Math.min(Math.max(camera.zoom,.5f),1.6f);
         }
     }
-
 }

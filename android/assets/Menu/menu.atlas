@@ -1,0 +1,40 @@
+
+menu.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+flecheBleu
+  rotate: false
+  xy: 1, 19
+  size: 155, 203
+  orig: 155, 203
+  offset: 0, 0
+  index: -1
+square
+  rotate: false
+  xy: 158, 94
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+triangleDroite
+  rotate: false
+  xy: 288, 94
+  size: 16, 128
+  orig: 16, 128
+  offset: 0, 0
+  index: -1
+triangleGauche
+  rotate: false
+  xy: 306, 94
+  size: 16, 128
+  orig: 16, 128
+  offset: 0, 0
+  index: -1
+triangleHaut
+  rotate: false
+  xy: 1, 1
+  size: 128, 16
+  orig: 128, 16
+  offset: 0, 0
+  index: -1

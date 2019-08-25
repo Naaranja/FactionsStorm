@@ -14,7 +14,7 @@ public class Hut1 extends Dwelling{
         amount.add(Player.Commodities.fcoin,100);
         amount.add(Player.Commodities.wood,100);
         amount.add(Player.Commodities.oil,100);
-        amount.add(Player.Commodities.uraniumn,100);
+        amount.add(Player.Commodities.uranium,100);
 
         productionTime=3;
         productionValue=100;

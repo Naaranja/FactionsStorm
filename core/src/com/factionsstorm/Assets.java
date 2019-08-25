@@ -38,8 +38,7 @@ public class Assets implements Disposable, AssetErrorListener {
         assetManager.load("Batiments/Decors/Routes", TextureAtlas.class);
         assetManager.load("Menus/MenusTheme1/MenusTheme1" ,TextureAtlas.class);
 
-        assetManager.load("Menu/square", TextureAtlas.class);
-        assetManager.load("Menu/menu2", TextureAtlas.class);
+        assetManager.load("Menu/menu.atlas", TextureAtlas.class);
 
         assetManager.load("Icons/Icons" ,TextureAtlas.class);
 
@@ -236,7 +235,7 @@ public class Assets implements Disposable, AssetErrorListener {
     }
 
     public class Menu{
-        public final TextureRegion square, topRightTriangle, topLeftTriangle, bottomLeftTriangle, bottomRightTriangle, fleche, carreExp, carreEnergie, button, smallButton, buttonML, barreC, barreHaut, barreBas, barreBasFull, buttonRetour, buttonValider, buttonBack, buttonInfo, buttonSend, buttonRessources, buttonProduction, barreExp, barreChargement, fond,
+        public final TextureRegion square, topTriangle, leftTriangle, rightTriangle, flecheBleu, carreExp, carreEnergie, button, smallButton, buttonML, barreC, barreHaut, barreBas, barreBasFull, buttonRetour, buttonValider, buttonBack, buttonInfo, buttonSend, buttonRessources, buttonProduction, barreExp, barreChargement, fond,
                 buttonVert, buttonRouge, fenetreFull, fenetreValidation, fenetreSlide0, fenetreSlide1, flecheD, flecheG, buttonQuitterSeul, buttonValiderSeul,graphMarche;
         public Menu(){
             TextureAtlas atlas = assetManager.get("Menus/MenusTheme1/MenusTheme1");
@@ -274,21 +273,15 @@ public class Assets implements Disposable, AssetErrorListener {
             buttonValiderSeul = atlas.findRegion("boutonValiderSeul");
             graphMarche = atlas.findRegion("graphMarche");
 
-            atlas = assetManager.get("Menu/square");
+            atlas = assetManager.get("Menu/menu.atlas");
 
             for(Texture t : atlas.getTextures()){t.setFilter(TextureFilter.Linear, TextureFilter.Linear);}
 
             square = atlas.findRegion("square");
-
-            atlas = assetManager.get("Menu/menu2");
-
-            //for(Texture t : atlas.getTextures()){t.setFilter(TextureFilter.Linear, TextureFilter.Linear);}
-
-            fleche = atlas.findRegion("Flèche");
-            topRightTriangle = atlas.findRegion("triangleBlanc1");
-            topLeftTriangle = atlas.findRegion("triangleBlanc2");
-            bottomLeftTriangle = atlas.findRegion("triangleBlanc3");
-            bottomRightTriangle = atlas.findRegion("triangleBlanc4");
+            flecheBleu = atlas.findRegion("flecheBleu");
+            topTriangle = atlas.findRegion("triangleHaut");
+            leftTriangle = atlas.findRegion("triangleGauche");
+            rightTriangle = atlas.findRegion("triangleDroite");
         }
     }
 
@@ -355,6 +348,22 @@ public class Assets implements Disposable, AssetErrorListener {
             unite[2][1][1] = atlas.findRegion("helico");
             unite[2][2][0] = atlas.findRegion("bombardier2");
             unite[2][2][1] = atlas.findRegion("bombardier");
+        }
+
+        public TextureRegion getCommoditieTexture(Player.Commodities commoditie){
+            switch(commoditie){
+                case fcoin: return Assets.instance.icon.ressources[0];
+                case wood: return Assets.instance.icon.ressources[1];
+                case oil: return Assets.instance.icon.ressources[2];
+                case iron: return Assets.instance.icon.ressources[3];
+                case copper: return Assets.instance.icon.ressources[4];
+                case aluminium: return Assets.instance.icon.ressources[5];
+                case gold: return Assets.instance.icon.ressources[6];
+                case uranium: return Assets.instance.icon.ressources[7];
+                case plasma: return Assets.instance.icon.ressources[8];
+                case ruby: return Assets.instance.icon.ressources[9];
+            }
+            return null;
         }
     }
 

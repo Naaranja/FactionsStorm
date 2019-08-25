@@ -6,7 +6,7 @@ public class Player {
 
     public static final Player instance = new Player();
 
-    public enum Commodities{fcoin,wood,oil,iron,bronze,aluminium,gold,uraniumn,plasma,ruby}
+    public enum Commodities{fcoin,wood,oil,iron,copper,aluminium,gold,uranium,plasma,ruby}
 
     private int level=0;
     private HashMap<Commodities, Integer> ressources;
@@ -17,10 +17,10 @@ public class Player {
         ressources.put(Commodities.wood,0);
         ressources.put(Commodities.oil,0);
         ressources.put(Commodities.iron,0);
-        ressources.put(Commodities.bronze,0);
+        ressources.put(Commodities.copper,0);
         ressources.put(Commodities.aluminium,0);
         ressources.put(Commodities.gold,0);
-        ressources.put(Commodities.uraniumn,0);
+        ressources.put(Commodities.uranium,0);
         ressources.put(Commodities.plasma,0);
         ressources.put(Commodities.ruby,0);
     }

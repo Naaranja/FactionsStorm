@@ -54,13 +54,11 @@ public class Button {
     }
 
     public void render(){
-        if(locked){
-            Drawer.texture(Assets.instance.menu.square, renderPosition.x, renderPosition.y, renderDim.x, renderDim.y, 0, new Vector3(color.x*.3f,color.y*.3f,color.z*.3f) ,alpha);
-            Drawer.texture(textureRegion, renderPosition.x+renderDim.x*.1f, renderPosition.y+renderDim.y*.1f, renderDim.x*.8f, renderDim.y*.8f, 0, new Vector3(.3f, .3f, .3f),alpha);
-        }else {
-            Drawer.texture(Assets.instance.menu.square, renderPosition.x, renderPosition.y, renderDim.x, renderDim.y, 0, color, alpha);
-            Drawer.texture(textureRegion, renderPosition.x+renderDim.x*.1f, renderPosition.y+renderDim.y*.1f, renderDim.x*.8f, renderDim.y*.8f, 0, alpha);
-        }
+        Vector3 renderColor = locked ? new Vector3(color.x*.3f,color.y*.3f,color.z*.3f) : color;
+        Drawer.texture(Assets.instance.menu.square, renderPosition.x, renderPosition.y, renderDim.x, renderDim.y, 0, renderColor, alpha);
+        Drawer.texture(textureRegion, renderPosition.x+renderDim.x*.1f, renderPosition.y+renderDim.y*.1f, renderDim.x*.8f, renderDim.y*.8f, 0, locked ? new Vector3(.3f, .3f, .3f) : new Vector3(1,1,1), alpha);
+        Drawer.texture(Assets.instance.menu.leftTriangle, renderPosition.x-renderDim.x*.05f, renderPosition.y, renderDim.x*.05f, renderDim.y, 0, renderColor, alpha);
+        Drawer.texture(Assets.instance.menu.rightTriangle, renderPosition.x+renderDim.x, renderPosition.y, renderDim.x*.05f, renderDim.y, 0, renderColor, alpha);
     }
 
     public boolean touchDown(Vector3 input){
@@ -85,6 +83,10 @@ public class Button {
 
     public void setTouched(boolean touched) {
         this.touched = touched;
+    }
+
+    public void setLocked(boolean locked){
+        this.locked=locked;
     }
 
     private boolean touch(Vector3 input){
