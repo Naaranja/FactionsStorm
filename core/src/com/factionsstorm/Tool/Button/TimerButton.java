@@ -27,7 +27,7 @@ public class TimerButton extends Button {
         super.render();
         if(timer>=0) {
             Drawer.setFontScale(.4f * scale);
-            Drawer.text(String.valueOf(timer), renderPosition.x, renderPosition.y+renderDim.y*.35f, renderDim.x);
+            Drawer.text(Sc.formatedTime(timer), renderPosition.x, renderPosition.y+renderDim.y*.35f, renderDim.x);
         }
     }
 

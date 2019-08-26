@@ -7,8 +7,7 @@ public class Trajectory {
 
     private Vector2 start, end;
     private double startTime;
-    private float duration;
-    private boolean finished=false;
+    private float duration, t, delay=0;
 
     public Trajectory(Vector2 start, Vector2 end, float duration){
         this.start=start;
@@ -17,10 +16,17 @@ public class Trajectory {
         startTime= Sc.time;
     }
 
+    public Trajectory(Vector2 start, Vector2 end, float duration, float delay){
+        this.start=start;
+        this.end=end;
+        this.duration=duration;
+        this.delay=delay;
+        startTime= Sc.time;
+    }
+
     public Vector2 getPosition(){
-        float t=(float)(Sc.time-startTime)/duration;
+        t=(float)Math.max(0,(Sc.time-(startTime+delay))/duration);
         if(t>1){
-            finished=true;
             return end;
         }
         float r=evolution(t);
@@ -28,7 +34,7 @@ public class Trajectory {
     }
 
     public boolean isFinished(){
-        return finished;
+        return (t>1);
     }
 
     //A fonction such as f(0)=0 and f(1)=1

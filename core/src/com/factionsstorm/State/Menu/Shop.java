@@ -129,9 +129,9 @@ public class Shop extends Menu implements State {
 
     private void initProducers(){
         items.clear();
-        items.add(new Item(vm, new Sawmill1(new Vector2(),0), Sc.screenW*.01f));
-        items.add(new Item(vm, new Sawmill1(new Vector2(),0), Sc.screenW*0.22f));
-        items.add(new Item(vm, new Sawmill1(new Vector2(),0), Sc.screenW*0.43f));
+        items.add(new Item(vm, new Sawmill1(new Vector2(),-1, 0), Sc.screenW*.01f));
+        items.add(new Item(vm, new Sawmill1(new Vector2(),-1, 0), Sc.screenW*0.22f));
+        items.add(new Item(vm, new Sawmill1(new Vector2(),-1, 0), Sc.screenW*0.43f));
         limitX = items.get(items.size() - 1).positionX + Sc.screenW * .21f;
         setVM();
     }
@@ -202,11 +202,11 @@ public class Shop extends Menu implements State {
             if(locked) {
                 Drawer.texture(Assets.instance.menu.topTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .7f, .7f), 1);
                 Drawer.texture(Assets.instance.menu.square, positionX, y, width, Sc.screenH *.28f, 0, new Vector3(.7f, .7f, .7f), 1);
-                Drawer.texture(building.textureFixe, positionX + (Sc.screenW * .2f - Sc.screenH * .3f) * .5f, y + Sc.screenH * .02f, Sc.screenH * .3f, Sc.screenH * .3f, 0, new Vector3(0,0,0), 1);
+                Drawer.texture(building.texture, positionX + (Sc.screenW * .2f - Sc.screenH * .3f) * .5f, y + Sc.screenH * .02f, Sc.screenH * .3f, Sc.screenH * .3f, 0, new Vector3(0,0,0), 1);
             }else{
                 Drawer.texture(Assets.instance.menu.topTriangle, positionX, y+Sc.screenH*.28f, width, Sc.screenH*.015f, 0, new Vector3(.7f, .8f, .2f), 1);
                 Drawer.texture(Assets.instance.menu.square, positionX, y, width, Sc.screenH * .28f, 0, new Vector3(.7f, .8f, .2f), 1);
-                Drawer.texture(building.textureFixe, positionX + (Sc.screenW * .2f - Sc.screenH * .3f) * .5f, y + Sc.screenH * .02f, Sc.screenH * .3f, Sc.screenH * .3f, 0);
+                Drawer.texture(building.texture, positionX + (Sc.screenW * .2f - Sc.screenH * .3f) * .5f, y + Sc.screenH * .02f, Sc.screenH * .3f, Sc.screenH * .3f, 0);
             }
         }
 

@@ -15,7 +15,7 @@ public class Data {
         public static ArrayList<Building> getBuildings() {
             buildings = new ArrayList<Building>();
             buildings.add(new Hut1(new Vector2(3,3),0));
-            buildings.add(new Sawmill1(new Vector2(6,6),0));
+            buildings.add(new Sawmill1(new Vector2(6,6),-1, 0));
             return buildings;
         }
 

@@ -7,6 +7,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.factionsstorm.Assets;
 import com.factionsstorm.Building.Building;
+import com.factionsstorm.Building.Harvestable;
 import com.factionsstorm.Player;
 import com.factionsstorm.Sc;
 import com.factionsstorm.State.Menu.Shop;
@@ -49,8 +50,8 @@ public class OwnUI extends UI {
     }
 
     @Override
-    public void update(OrthographicCamera camera){
-        super.update(camera);
+    public void update(OrthographicCamera mapCamera){
+        super.update(mapCamera);
         if(vm.constructionBuilding!=null){
             Vector2 position = vm.constructionBuilding.getRenderPosition();
             Vector3 projection = camera.project(new Vector3(position.x, position.y, 0));
@@ -63,6 +64,9 @@ public class OwnUI extends UI {
         }else {
             for (Building building : vm.buildings) {
                 if (building.ui != null) building.ui.update();
+                if(Harvestable.class.isAssignableFrom(building.getClass())){
+                    ((Harvestable)building).updateParticles(mapCamera);
+                }
             }
         }
         ressources.update();
@@ -76,6 +80,11 @@ public class OwnUI extends UI {
             buttonsContruction[0].render();
             buttonsContruction[1].render();
         }else {
+            for (Building building : vm.buildings) {
+                if(Harvestable.class.isAssignableFrom(building.getClass())){
+                    ((Harvestable)building).renderParticles();
+                }
+            }
             for (Building building : vm.buildings) {
                 if (building.ui != null) building.ui.render();
             }
@@ -190,19 +199,22 @@ public class OwnUI extends UI {
             TextureRegion textureRegion;
             Vector3 color = new Vector3(.1f,.4f,.6f);
             int value;
+            String valueChain;
 
             private Res(Player.Commodities commoditie, Vector2 position){
                 this.position=position;
                 this.commoditie=commoditie;
                 textureRegion = Assets.instance.icon.getCommoditieTexture(commoditie);
                 value = Player.instance.get(commoditie);
+                valueChain = Sc.formatedInt(value);
             }
 
             private void update(){
                 int target = Player.instance.get(commoditie);
                 if(value != target){
-                    value += (target - value)*.1f;
+                    value += (double)(target - value)*.1f;
                     if(Math.abs(target-value)<10) value = target;
+                    valueChain = Sc.formatedInt(value);
                 }
             }
 
@@ -210,9 +222,8 @@ public class OwnUI extends UI {
                 Drawer.texture(Assets.instance.menu.square, position.x+dim.y*.5f, position.y+dim.y*.1f, dim.x-dim.y*.5f, dim.y*.8f, 0, color, 1);
                 Drawer.texture(textureRegion, position.x, position.y, dim.y, dim.y, 0);
                 Drawer.setFontScale(.4f);
-                Drawer.text(String.valueOf(value), position.x+dim.y*.5f, position.y+dim.y*.75f, dim.x-dim.y*.5f);
+                Drawer.text(valueChain, position.x+dim.y*.5f, position.y+dim.y*.75f, dim.x-dim.y*.5f);
             }
         }
-
     }
 }

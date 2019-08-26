@@ -32,7 +32,7 @@ public abstract class UI {
         matrix = new Matrix4();
         matrix.setToRotation(new Vector3(1, 0, 0), 0);
     }
-    public void update(OrthographicCamera camera){
+    public void update(OrthographicCamera mapCamera){
         for(Button button : buttons){
             button.update();
         }

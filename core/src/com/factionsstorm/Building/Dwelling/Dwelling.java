@@ -2,35 +2,42 @@ package com.factionsstorm.Building.Dwelling;
 
 import com.badlogic.gdx.math.Vector2;
 import com.factionsstorm.Assets;
-import com.factionsstorm.Building.Building;
+import com.factionsstorm.Building.Harvestable;
 import com.factionsstorm.Player;
 import com.factionsstorm.Sc;
 import com.factionsstorm.Tool.Button.Button;
 import com.factionsstorm.Tool.Button.TimerButton;
 import com.factionsstorm.Tool.Trajectory;
 
-public abstract class Dwelling extends Building {
+public abstract class Dwelling extends Harvestable {
 
     protected int productionValue, productionTime;
     double productionEndTime;
-    private boolean producing;
+    State state;
 
     public Dwelling(Vector2 position, double productionEndTime){
         super(position);
         dim=2;
         this.productionEndTime=productionEndTime;
+        if(productionEndTime > Sc.time){
+            state = State.producing;
+        }else{
+            state = State.finished;
+        }
     }
     @Override
     public void update(){
         super.update();
-        if(producing && Sc.time>=productionEndTime){
-            producing=false;
+        if(state==State.producing && Sc.time>=productionEndTime){
+            state=State.finished;
         }
     }
 
     public void harvest(){
         Player.instance.add(Player.Commodities.fcoin,productionValue);
         productionEndTime=Sc.time+productionTime;
+        state=State.producing;
+        harvest(Player.Commodities.fcoin, productionValue);
     }
 
     @Override

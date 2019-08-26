@@ -10,7 +10,7 @@ public class Hut1 extends Dwelling{
         super(position, productionEndTime);
         name="Hut Lv 1";
         level=0;
-        textureFixe = Assets.instance.fixed.hutte1;
+        texture = Assets.instance.fixed.hutte1;
         amount.add(Player.Commodities.fcoin,100);
         amount.add(Player.Commodities.wood,100);
         amount.add(Player.Commodities.oil,100);

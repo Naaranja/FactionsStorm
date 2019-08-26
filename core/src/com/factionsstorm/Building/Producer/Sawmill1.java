@@ -5,11 +5,13 @@ import com.factionsstorm.Assets;
 import com.factionsstorm.Player;
 
 public class Sawmill1 extends Producer {
-    public Sawmill1(Vector2 position, double productionEndTime) {
-        super(position, productionEndTime);
+    public Sawmill1(Vector2 position, int productionIndex, double productionEndTime) {
+        super(position, productionIndex, productionEndTime);
         name="Scierie Lv 1";
         level=0;
-        textureFixe = Assets.instance.fixed.scierie1;
+        texture = Assets.instance.fixed.scierie1;
+        textureFixe = texture;
+        animation = Assets.instance.animation.animScierieLv1;
         ressourceTexture = Assets.instance.icon.ressources[1];
         amount.add(Player.Commodities.fcoin,100);
 

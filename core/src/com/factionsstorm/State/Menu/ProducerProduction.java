@@ -112,6 +112,9 @@ public class ProducerProduction extends Menu implements State {
         private Button buyButton;
         private String name, time;
 
+        String[] names = {"Little harvest", "Little production", "Sweet harvest", "Sweet production",
+                "Big harvest", "Big production", "Wtf harvest", "Wtf production"};
+        String[] timesString = {"5m", "30m", "1h", "2h", "4h", "12h", "24h", "48h"};
         //TODO buyButton -> TextButton
 
         public Item(final int index, float positionX, final Amount productionCost, Amount productionIncome){
@@ -120,12 +123,8 @@ public class ProducerProduction extends Menu implements State {
             this.productionCost = productionCost;
             this.productionIncome = productionIncome;
 
-            String[] names = {"Little harvest", "Little production", "Sweet harvest", "Sweet production",
-                    "Big harvest", "Big production", "Wtf harvest", "Wtf production"};
             name=names[index];
-
-            String[] times = {"5m", "30m", "1h", "2h", "4h", "12h", "24h", "48h"};
-            time=times[index];
+            time=timesString[index];
 
             buyButton = new Button(new Vector2(positionX+width*.1f,Sc.screenH*.04f), new Vector2(width*.8f, Sc.screenH*.2f), Assets.instance.menu.buttonValider){
                 @Override

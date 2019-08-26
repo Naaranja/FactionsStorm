@@ -14,7 +14,7 @@ import com.factionsstorm.Tool.Trajectory;
 
 public abstract class Building {
 
-    private Vector2 position, renderPosition;
+    protected Vector2 position, renderPosition;
     protected int dim;
     protected boolean naval=false;
     protected String name;
@@ -26,7 +26,7 @@ public abstract class Building {
     private Vector2 dragInitCoord=null;
 
     protected Animation animation;
-    public TextureRegion textureFixe;
+    public TextureRegion texture;
     private Tile[] tiles;
     public UI ui=null;
 
@@ -52,9 +52,9 @@ public abstract class Building {
 
     public void render(){
         if(selected){
-            Drawer.texture(textureFixe,renderPosition.x-1,renderPosition.y+1,dim*(float)Math.sqrt(2),dim*(float)Math.sqrt(6),-45,.5f);
+            Drawer.texture(texture,renderPosition.x-1,renderPosition.y+1,dim*(float)Math.sqrt(2),dim*(float)Math.sqrt(6),-45,.5f);
         }else {
-            Drawer.texture(textureFixe, renderPosition.x - 1, renderPosition.y + 1, dim * (float) Math.sqrt(2), dim * (float) Math.sqrt(6), -45);
+            Drawer.texture(texture, renderPosition.x - 1, renderPosition.y + 1, dim * (float) Math.sqrt(2), dim * (float) Math.sqrt(6), -45);
         }
         if(dragged){
             for(Tile tile : tiles){

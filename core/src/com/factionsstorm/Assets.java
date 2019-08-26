@@ -6,8 +6,10 @@ import com.badlogic.gdx.assets.AssetErrorListener;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 
 public class Assets implements Disposable, AssetErrorListener {
@@ -18,12 +20,12 @@ public class Assets implements Disposable, AssetErrorListener {
     public Fixed fixed;
     public Menu menu;
     public Icon icon;
+    public Anim animation;
 
     /*public Campagne campagne;
     public Persos persos;
     public Combat combat;
-    public Unites unites;
-    public Anim anim;*/
+    public Unites unites;*/
 
     private AssetManager assetManager;
 
@@ -42,14 +44,14 @@ public class Assets implements Disposable, AssetErrorListener {
 
         assetManager.load("Icons/Icons" ,TextureAtlas.class);
 
+        assetManager.load("Batiments/Anim/Anim" ,TextureAtlas.class);
 
         /*assetManager.load("Menus/MenusPack" ,TextureAtlas.class);
 
         assetManager.load("Combat/Campagne/Campagne", TextureAtlas.class);
         assetManager.load("Persos/Persos", TextureAtlas.class);
         assetManager.load("Combat/Combat", TextureAtlas.class);
-        assetManager.load("Unites/Unites", TextureAtlas.class);
-        assetManager.load("Batiments/Anim/Anim" ,TextureAtlas.class);*/
+        assetManager.load("Unites/Unites", TextureAtlas.class);*/
 
         assetManager.finishLoading();
         Gdx.app.debug (TAG, "# of assets loaded: "+assetManager.getAssetNames().size);
@@ -72,12 +74,12 @@ public class Assets implements Disposable, AssetErrorListener {
         fixed = new Fixed();
         menu = new Menu();
         icon = new Icon();
+        animation = new Anim();
 
         /*campagne = new Campagne(atlasCampagne);
         persos = new Persos(atlasPersos);
         combat = new Combat(atlasCombat);
-        unites = new Unites(atlasUnites);
-        anim = new Anim(atlasAnim);*/
+        unites = new Unites(atlasUnites);*/
     }
 
     @Override
@@ -443,7 +445,7 @@ public class Assets implements Disposable, AssetErrorListener {
             unite[2][1][0] = atlas.findRegion("Spec");
             unite[2][2][0] = atlas.findRegion("Bomber");
         }
-    }
+    }*/
     public class Anim{
         public final Animation animScierieLv1,animScierieLv2,animScierieLv3,animDerrickLv1,animDerrickLv2,animDerrickLv3,animMineFerLv1,animMineCuLv1,animMineAluLv1,
                 animMineOrLv1,animMineUraLv1,animMineFerLv2,animMineCuLv2,animMineAluLv2,animMineOrLv2,animMineUraLv2,animMineFerLv3,animMineCuLv3,animMineAluLv3,
@@ -451,15 +453,19 @@ public class Assets implements Disposable, AssetErrorListener {
                 animCaserneLv1,animCaserneLv2,animCaserneLv3,animCasernePlasma,
                 animBaseAerienneLv1,animBaseAerienneLv2,animBaseAerienneLv3,animBaseAeriennePlasma,
                 animReserveEnergieLv1;
-        AtlasRegion imageDebut, image1, image2;
+        TextureAtlas.AtlasRegion imageDebut, image1, image2;
         public final TextureRegion ferme1,ferme2,ferme3;
         double rdm;
-        public Anim(TextureAtlas atlas){
+        public Anim(){
+            TextureAtlas atlas = assetManager.get("Batiments/Anim/Anim");
+
+            for(Texture t : atlas.getTextures()){t.setFilter(TextureFilter.Linear, TextureFilter.Linear);}
+
             ferme1 = atlas.findRegion("Ferme1");
             ferme2 = atlas.findRegion("Ferme2");
             ferme3 = atlas.findRegion("Ferme3");
 
-            Array<AtlasRegion> regions = atlas.findRegions("ScierieLv1");
+            Array<TextureAtlas.AtlasRegion> regions = atlas.findRegions("ScierieLv1");
             imageDebut=regions.first();
             for(int i=0;i<8;i++){
                 regions.insert(0, imageDebut);
@@ -588,7 +594,7 @@ public class Assets implements Disposable, AssetErrorListener {
             regions = atlas.findRegions("BaseAeriennePlasma");
             animBaseAeriennePlasma = new Animation(0.15f,regions,Animation.PlayMode.LOOP_PINGPONG);
         }
-    }*/
+    }
 }
 
 
