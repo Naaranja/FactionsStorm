@@ -14,11 +14,9 @@ import com.factionsstorm.Tool.Trajectory;
 
 public abstract class Producer extends Harvestable {
 
-    protected TextureRegion ressourceTexture;
     protected TextureRegion textureFixe;
     protected Animation animation;
 
-    protected State state;
     protected double productionEndTime;
     protected Player.Commodities commoditie;
     protected int productionIndex;
@@ -69,7 +67,7 @@ public abstract class Producer extends Harvestable {
     public void harvest(){
         Player.instance.add(commoditie, productionIncome[productionIndex]);
         state=State.waiting;
-        harvest(commoditie, productionIncome[productionIndex]);
+        harvest(productionIncome[productionIndex]);
     }
 
     public void openProcuderProduction(){
@@ -80,7 +78,7 @@ public abstract class Producer extends Harvestable {
     public void createUI() {
         ui = new UI();
         Button[] buttons = new Button[1];
-        buttons[0] = new TimerButton(new Vector2(Sc.screenW*.5f-ui.BUTTON_WIDTH/2,-ui.BUTTON_HEIGHT), new Vector2(ui.BUTTON_WIDTH,ui.BUTTON_HEIGHT), ressourceTexture, productionEndTime){
+        buttons[0] = new TimerButton(new Vector2(Sc.screenW*.5f-ui.BUTTON_WIDTH/2,-ui.BUTTON_HEIGHT), new Vector2(ui.BUTTON_WIDTH,ui.BUTTON_HEIGHT), productionTexture, productionEndTime){
             @Override
             public void action(){
                 if(state==State.waiting){
@@ -88,7 +86,6 @@ public abstract class Producer extends Harvestable {
                 }else if(state==State.finished){
                     harvest();
                 }
-
             }
         };
         Trajectory trajectory = new Trajectory(buttons[0].getPosition(),new Vector2(Sc.screenW*.5f-ui.BUTTON_WIDTH/2,ui.BUTTON_POS_Y),.25f);

@@ -54,12 +54,12 @@ public class OwnUI extends UI {
         super.update(mapCamera);
         if(vm.constructionBuilding!=null){
             Vector2 position = vm.constructionBuilding.getRenderPosition();
-            Vector3 projection = camera.project(new Vector3(position.x, position.y, 0));
-            buttonsContruction[0].setPosition(new Vector2(projection.x-Sc.screenH*.13f/camera.zoom, projection.y+Sc.screenH*.15f/camera.zoom));
-            buttonsContruction[0].setDim(new Vector2(Sc.screenH*.1f/camera.zoom,Sc.screenH*.1f/camera.zoom));
+            Vector3 projection = mapCamera.project(new Vector3(position.x, position.y, 0));
+            buttonsContruction[0].setPosition(new Vector2(projection.x-Sc.screenH*.13f/mapCamera.zoom, projection.y+Sc.screenH*.15f/mapCamera.zoom));
+            buttonsContruction[0].setDim(new Vector2(Sc.screenH*.1f/mapCamera.zoom,Sc.screenH*.1f/mapCamera.zoom));
             buttonsContruction[0].update();
-            buttonsContruction[1].setPosition(new Vector2(projection.x+Sc.screenH*.03f/camera.zoom, projection.y+Sc.screenH*.15f/camera.zoom));
-            buttonsContruction[1].setDim(new Vector2(Sc.screenH*.1f/camera.zoom,Sc.screenH*.1f/camera.zoom));
+            buttonsContruction[1].setPosition(new Vector2(projection.x+Sc.screenH*.03f/mapCamera.zoom, projection.y+Sc.screenH*.15f/mapCamera.zoom));
+            buttonsContruction[1].setDim(new Vector2(Sc.screenH*.1f/mapCamera.zoom,Sc.screenH*.1f/mapCamera.zoom));
             buttonsContruction[1].update();
         }else {
             for (Building building : vm.buildings) {

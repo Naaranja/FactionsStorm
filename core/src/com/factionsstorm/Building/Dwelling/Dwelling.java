@@ -13,11 +13,11 @@ public abstract class Dwelling extends Harvestable {
 
     protected int productionValue, productionTime;
     double productionEndTime;
-    State state;
 
     public Dwelling(Vector2 position, double productionEndTime){
         super(position);
         dim=2;
+        productionTexture = Assets.instance.icon.getCommoditieTexture(Player.Commodities.fcoin);
         this.productionEndTime=productionEndTime;
         if(productionEndTime > Sc.time){
             state = State.producing;
@@ -37,7 +37,7 @@ public abstract class Dwelling extends Harvestable {
         Player.instance.add(Player.Commodities.fcoin,productionValue);
         productionEndTime=Sc.time+productionTime;
         state=State.producing;
-        harvest(Player.Commodities.fcoin, productionValue);
+        harvest(productionValue);
     }
 
     @Override

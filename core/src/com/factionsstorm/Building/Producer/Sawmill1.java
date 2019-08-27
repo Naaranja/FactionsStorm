@@ -10,9 +10,9 @@ public class Sawmill1 extends Producer {
         name="Scierie Lv 1";
         level=0;
         texture = Assets.instance.fixed.scierie1;
+        productionTexture = Assets.instance.icon.getCommoditieTexture(Player.Commodities.wood);
         textureFixe = texture;
         animation = Assets.instance.animation.animScierieLv1;
-        ressourceTexture = Assets.instance.icon.ressources[1];
         amount.add(Player.Commodities.fcoin,100);
 
         commoditie = Player.Commodities.wood;
