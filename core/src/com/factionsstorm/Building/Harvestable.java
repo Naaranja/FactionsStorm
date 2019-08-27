@@ -17,6 +17,7 @@ public abstract class Harvestable extends Building {
     protected State state;
 
     protected TextureRegion productionTexture;
+    private float gapDelay;
 
     private FinishedIcon finishedIcon = new FinishedIcon();
     private ArrayList<Icon> icons = new ArrayList<Icon>();
@@ -24,6 +25,7 @@ public abstract class Harvestable extends Building {
 
     public Harvestable(Vector2 position) {
         super(position);
+        gapDelay = (float)Math.random();
     }
 
     public void updateParticles(OrthographicCamera mapCamera){
@@ -65,13 +67,13 @@ public abstract class Harvestable extends Building {
     }
 
     private class FinishedIcon{
-        final float height = Sc.screenH*.05f;
+        final float height = Sc.screenH*.03f;
         Vector2 position = null;
         float dim, scale;
 
         private void update(OrthographicCamera mapCamera){
-            Vector3 projection = mapCamera.project(new Vector3(renderPosition.x+1, renderPosition.y+1, 0));
-            position = new Vector2(projection.x, projection.y + (float)(1+Math.sin(Sc.time))*.5f*height / mapCamera.zoom);
+            Vector3 projection = mapCamera.project(new Vector3(renderPosition.x+1.5f, renderPosition.y+1.5f, 0));
+            position = new Vector2(projection.x, projection.y + (float)(1+Math.sin(Sc.time+2*Math.PI*gapDelay))*.5f*height / mapCamera.zoom);
             dim = Sc.screenH * .05f / mapCamera.zoom;
             scale = .5f/mapCamera.zoom;
         }
@@ -141,9 +143,13 @@ public abstract class Harvestable extends Building {
                 }
             }
             if(list.isEmpty()){
-                list.add(new Z(-1));
-                list.add(new Z(.5f));
+                list.add(new Z(-3*gapDelay));
+                list.add(new Z(-3*gapDelay+.5f));
+                list.add(new Z(-3*gapDelay+1));
+            }else if(list.size()<3){
                 list.add(new Z(1));
+                list.add(new Z(1.5f));
+                list.add(new Z(2));
             }
         }
 
